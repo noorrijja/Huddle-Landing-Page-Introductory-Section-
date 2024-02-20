@@ -1,0 +1,132 @@
+body {
+  height: 100vh;
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(257, 40%, 49%);
+  margin-inline: 4%;
+  font-family: "Open Sans", sans-serif;
+}
+.nav-item {
+  padding-block: 4%;
+}
+.nav-item > .logo {
+  width: 55%;
+  height: 55%;
+}
+.screen {
+  margin-block-start: 9%;
+  display: flex;
+}
+.screen > .screen-mockup {
+  width: 85%;
+  margin: auto;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  padding-block-start: 1%;
+  padding-inline: 4%;
+}
+.content > .heading {
+  margin-bottom: 0;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  opacity: 95%;
+  font-weight: 600;
+}
+.content .desc {
+  margin-block-end: 0;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  opacity: 75%;
+}
+button.register {
+  margin-block-start: 6%;
+  width: auto;
+  height: auto;
+  padding-block: 3.5%;
+  padding-inline: 20%;
+  border-radius: 50px;
+  border: none;
+  color: hsl(257, 56%, 66%);
+  box-shadow: 0 6px 2px rgba(102, 86, 86, 0.5);
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  z-index: 999;
+}
+button.register:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+.icon {
+  color: white;
+}
+.icon:hover {
+  color: hsl(300, 69%, 71%);
+}
+footer.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 10%;
+  padding-block-end: 8%;
+}
+.background {
+  width: 27px;
+  height: 27px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.background:hover {
+  border: 2px solid hsl(300, 69%, 71%);
+}
+@media only screen and (min-width: 1024px) {
+  .nav-item {
+    padding-block: 2%;
+  }
+  .nav-item > .logo {
+    width: 20%;
+    height: 20%;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .screen > .screen-mockup {
+    width: auto;
+  }
+  .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .content > .heading {
+    text-align: left;
+  }
+  .content .desc {
+    text-align: left;
+  }
+  footer.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-block-end: 3.5%;
+  }
+}
